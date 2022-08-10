@@ -1,0 +1,14 @@
+<button *ngIf="!this.login_status"(click)="this.login_status=true">LOG In</button>
+<button *ngIf="!this.register_status"(click)="this.register_status=true">Register</button>
+
+
+  <div *ngIf="this.login_status">
+    <h2>log in </h2>
+    <app-login></app-login>
+
+  </div>
+  <div *ngIf="this.register_status">
+    <h2>Register</h2>
+    <app-register></app-register>
+
+  </div>

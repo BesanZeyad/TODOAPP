@@ -1,1 +1,12 @@
-<p>login works!</p>
+<div  class="main">
+    <h1>LOG IN</h1> <br>
+    <input type="text"  id="email" placeholder="Email" [(ngModel)]="logemail" ><br><br>
+<input type="password"  id="password" placeholder="Password" [(ngModel)]="logpassword" ><br><br>
+<button *ngIf="!this.LOGIN_status"(click)="login()">LOG IN </button>
+
+</div>
+
+<div *ngIf="this.LOGIN_status">
+    <app-todo></app-todo>
+
+  </div>

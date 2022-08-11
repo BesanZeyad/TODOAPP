@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  login_status=false;
-  register_status=false;
+  login_status : boolean=false;
+  register_status: boolean =false;
   
 
  

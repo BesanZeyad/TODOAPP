@@ -44,7 +44,7 @@ export class RegisterComponent  {
   this.age = 0; 
   this.gender ='';
   this.email= '';
-  this.password='';
+  this.password ='';
  
  }
 

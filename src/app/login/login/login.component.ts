@@ -15,10 +15,10 @@ export class LoginComponent {
   this.users=JSON.parse(localStorage.getItem('userData') || '[]');
   console.log(this.users);
   for( const user of this.users){
-    console.log(user.email);
+   /* console.log(user.email);
     console.log(user.password);
     console.log(this.logemail);
-    console.log(this.logpassword);
+    console.log(this.logpassword);*/
     if((this.logemail===user.email)&&(this.logpassword===user.password))
    {
      this.LOGIN_status=true;

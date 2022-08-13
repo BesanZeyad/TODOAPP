@@ -1,1 +1,14 @@
-<p>todo works!</p>
+<div class="main">
+    <h1>TODO</h1><br>
+    <input placeholder="Enter task" #task > <br> <br>
+    <button (click)="addtask(task.value)"> ADD</button> <br>
+    <ul *ngFor="let item of list " >
+        <li >{{item.name}}
+            <button (click)=" update(item.id)" >UPDATE</button>
+            <button (click)="delet(item.id)">DELET</button>
+            </li>
+    </ul>
+
+</div>
+
+
